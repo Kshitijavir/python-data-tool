@@ -1,28 +1,37 @@
 # python-data-tool
 
 ```markdown
-# Python Calculator
+# Python Data Tool
 
-A simple **Python Calculator** project that performs basic arithmetic operations.  
-This is a beginner-friendly project to practice Python fundamentals, file handling, and Git/GitHub.
-
----
-
-## ⚡ Features
-- ➕ Addition  
-- ➖ Subtraction  
-- ✖️ Multiplication  
-- ➗ Division  
+A simple Python tool for handling **CSV** and **JSON** files.  
+This project demonstrates how to:
+- Read CSV files
+- Convert JSON → CSV
+- Convert CSV → JSON
+- Validate data
+- Show quick summaries of CSV/JSON files
 
 ---
 
 ## 📂 Project Structure
 ```
 
-├── calculator.py   # Main calculator program
-├── README.md       # Project documentation
+├── calculator.py   # Simple Python calculator (extra project)
+├── data\_tool.py    # Main data handling tool
+├── sample.csv      # Sample CSV file
+├── sample.json     # Sample JSON file
+├── output.csv      # Converted CSV output
+└── README.md       # Project documentation
 
 ````
+
+---
+
+## ⚡ Features
+✅ CSV → JSON conversion  
+✅ JSON → CSV conversion  
+✅ Data summary (columns, rows, preview)  
+✅ Data validation  
 
 ---
 
@@ -30,32 +39,44 @@ This is a beginner-friendly project to practice Python fundamentals, file handli
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Kshitijavir/python-calculator.git
-   cd python-calculator
+   git clone https://github.com/Kshitijavir/python-data-tool.git
+   cd python-data-tool
 ````
 
-2. Run the calculator:
+2. Run the tool:
 
    ```bash
-   python calculator.py
+   python data_tool.py <command> <file>
    ```
 
-3. Sample Menu:
+---
 
-   ```
-   ****** Simple Python Calculator ******
-   1. Add
-   2. Subtract
-   3. Multiply
-   4. Divide
-   5. Exit
-   ```
+## 📌 Commands
+
+### Show summary of a CSV
+
+```bash
+python data_tool.py summary sample.csv
+```
+
+### Convert JSON → CSV
+
+```bash
+python data_tool.py convert-to-csv sample.json -o output.csv
+```
+
+### Convert CSV → JSON
+
+```bash
+python data_tool.py convert-to-json sample.csv -o output.json
+```
 
 ---
 
 ## 🛠 Requirements
 
 * Python 3.x
+* No external libraries (uses built-in Python modules)
 
 ---
 
@@ -66,15 +87,15 @@ This is a beginner-friendly project to practice Python fundamentals, file handli
 
 ---
 
-🚀 *A great starting point for Python beginners.*
+🚀 *Now you can easily manage CSV/JSON files with this tool.*
 
 ````
 
 ---
 
 👉 Steps for you:
-1. Copy the above text.  
-2. Replace the **README.md** inside your `python-calculator` repo.  
+1. Copy this text.  
+2. Replace your existing **README.md** content with it.  
 3. Save the file.  
 4. Run:
    ```bash
